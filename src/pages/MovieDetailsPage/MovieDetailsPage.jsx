@@ -46,22 +46,38 @@ const MovieDetailsPage = () => {
           />
         </div>
         <ul className={css.movieInfo}>
-          <li>
+          <li className={css.movieItem}>
             <h1 className={css.movieTitle}>{moviesDetails.title}</h1>
           </li>
-          <li>
-            <p className={css.overview}>Overview: {moviesDetails.overview}</p>
-          </li>
-          <li>
-            <p className={css.tagline}>Tagline: {moviesDetails.tagline}</p>
-          </li>
-          <li>
-            <p className={css.genres}>
-              Genres: {moviesDetails.genres.map(item => item.name).join(', ')}
+          <li className={css.movieItem}>
+            <p className={css.info}>
+              <b className={css.accent}>Overview:</b>
+              {moviesDetails.overview}
             </p>
           </li>
-          <li>
-            <p className={css.runtime}>Runtime: {moviesDetails.runtime} min</p>
+          <li className={css.movieItem}>
+            <p className={css.info}>
+              <b className={css.accent}>Tagline:</b>
+              {moviesDetails.tagline}
+            </p>
+          </li>
+          <li className={css.movieItem}>
+            <p className={css.info}>
+              <b className={css.accent}>Genres:</b>
+              {moviesDetails.genres.map(item => item.name).join(', ')}
+            </p>
+          </li>
+          <li className={css.movieItem}>
+            <p className={css.info}>
+              <b className={css.accent}>Runtime:</b>
+              {moviesDetails.runtime} min
+            </p>
+          </li>
+          <li className={css.movieItem}>
+            <p className={css.info}>
+              <b className={css.accent}>Release:</b>
+              {moviesDetails.release_date}
+            </p>
           </li>
         </ul>
       </div>

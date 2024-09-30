@@ -1,15 +1,21 @@
 .navContainer {
-  padding: 15px;
+  padding: 10px 80px;
   background-color: #343a40;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navBar {
   display: flex;
-  justify-content: center;
-  gap: 30px;
+  gap: 25px;
+}
+
+.icon {
+  color: #fff;
 }
 
 .link {

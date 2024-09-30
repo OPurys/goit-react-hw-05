@@ -2,6 +2,7 @@ import { fetchReviews } from '../../services/api';
 import { useParams } from 'react-router-dom';
 import css from './MovieReviews.module.css';
 import { useEffect, useState } from 'react';
+import { WiStars } from 'react-icons/wi';
 
 const MovieReviews = () => {
   const reviewsId = useParams();
@@ -25,6 +26,7 @@ const MovieReviews = () => {
               <div key={id} className={css.reviewItem}>
                 <h3 className={css.reviewAuthor}>
                   {author}: {rating}
+                  <WiStars size={30} className={css.icon} />
                 </h3>
                 <p className={css.reviewContent}>{content}</p>
               </div>
