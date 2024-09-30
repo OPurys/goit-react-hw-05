@@ -1,0 +1,28 @@
+.castContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.castMember {
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.castMember:hover {
+  transform: scale(1.05);
+}
+
+.profileImage {
+  border-radius: 8px;
+  border: 2px solid #e0e0e0;
+}
+
+.actorName {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #343a40;
+  font-weight: bold;
+  width: 120px;
+}

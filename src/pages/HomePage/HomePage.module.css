@@ -1,0 +1,9 @@
+.trendingHeader {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #343a40;
+  margin: 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
